@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  <a href="https://www.disneylandparis.com/nl-nl/voorjaar-en-lente/?ecid=SEM_IP_S_4469596408-c-98352319814-315237829-536337516453-Exact&gclsrc=aw.ds&&mkwid=J8vamOKm&gclid=CjwKCAiA9dGqBhAqEiwAmRpTCxU7LfGoCtl5_ReMsC8tNl-D3A0mpkN-tsGK7l_3xbDD83kV0nTl_xoCJ0IQAvD_BwE&pcrid=536337516453&pmt=e&pkw=disneyland+parijs">Disneyland parijs</a>
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Disneyland parijs
+  <img src="readme-images/hoofdpagina.jpg" width="375px" alt="de hoofdpagina van de disneyland parijs site">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/resaurantspagina.jpg" width="375px" alt="pagina met informatie over alle restaurants in Disney">
  
 </details>
 
@@ -56,7 +56,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  De screenreader deed het erg goed, hij pakte alles op en las de tekt goed voor.De gidsen die disney aanbied hebben zelf ook een screenreader dit kan wel vervelend zijn voor mensen die gebruik maken van een reader, want zo kunnen er twee door elkaar heen gaan lopen. om snel te vinden wat je zoekt is het wel wat lastiger, want je gaat bij elke pagina overal langs. Je kan wel er snel doorheen skippen als je bekent bent met de site of al snel hoort dat dit niet is wat je zoekt.
+
+  Uit de checklist kwam eigenlijk dat het een vrij goede site is, totdat ik naar de code ging kijken. Alles is geschreven in Div's, dus qua code is het een hele slechte site.
 
 </details>
 
@@ -68,10 +70,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/FED.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/schets2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -88,17 +90,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Alle losse opdrachten gaan erg goed, stap voor stap aan het werk lukt een stuk beter dan in 1x een grote site namaken. Het is een beetje veel voor mijn gevoel. Hier helpen de breakdown schetsen wel bij gelukkig. Ik loop voor mijn gevoel wel een beetje achter met het namaken van de site, dus ik  ga hier van het weekend een inhaalslag mee maken. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3    | student 4        | student 5
+  | breakdownschets| wat kan je doen    | Vraag over   | button in een    | font face
+  | nakijken       | inplaats van Div   | html/css     | button           |
+  |                |                    | uitklap elle-|                  |
+  |                |                    | menten       |                  |
 
 
   ### Verslag van meeting

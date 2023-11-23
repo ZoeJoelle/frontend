@@ -29,3 +29,20 @@
 
 /* jouw code */
 
+section:nth-child(2) {
+	text-align: center;
+}
+
+section:nth-child(4) {
+	text-align: center;
+}
+
+section:nth-child(7) {
+	text-align: center;
+}
+
+button {
+	border-color: blue;
+	color: blue;
+	border-radius: 3em;
+}
