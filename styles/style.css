@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'demo';
+	src: url('styles/demo_fonts/Fontspring-DEMO-olivetta-bold.otf') format('OpenType');
+  }
+
+  @font-face {
+	font-family: 'demoBold';
+	src: url('styles/demo_fonts/Fontspring-DEMO-olivetta-regular.otf') format('OpenType');
+  }
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -15,13 +26,27 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	
+	--color-text:rgb(37 48 80);
+	--color-background-sections:white;
+	--color-button:rgb(0 75 234);
+	--color-button-hoover:rgb(2 59 185);
+	--color-background:rgb(235 235 235);
 }
 
+body {
+	background-color: var(--color-background);
+}
 
+p {
+	font-family: demo;
+	color: var(--color-text);
+}
 
-
+h2 {
+	font-family: demoBold;
+	color: var(--color-text);
+}
 
 /****************/
 /* JOUW STYLING */
@@ -29,20 +54,169 @@
 
 /* jouw code */
 
-section:nth-child(2) {
+main section {
+	margin-top: 2em;
+	margin-bottom: 4em;
+	margin-left: 1em;
+	margin-right: 1em
+}
+
+main section:nth-child(2) {
+	text-align: center;
+
+}
+
+main section:nth-child(2) h2 {
+	font-weight: bold;
+
+}
+
+main section:nth-child(3) > button {
+	display: grid;
+	place-items: center;
+}
+
+main section:nth-child(4) {
 	text-align: center;
 }
 
-section:nth-child(4) {
+main section:nth-child(7) {
 	text-align: center;
 }
 
-section:nth-child(7) {
-	text-align: center;
-}
-
-button {
-	border-color: blue;
-	color: blue;
+main section > button {
+	border-color: var(--color-button);
+	color: var(--color-button);
+	background-color: var(--color-background);
 	border-radius: 3em;
+	padding: 1em 2em;
+	transition: .5s;
+
+	font-weight: bold;
+
 }
+
+
+main section:nth-child(2) > button {
+	border-color: var(--color-button);
+	background-color: var(--color-button);
+	color: var(--color-background);
+	border-radius: 3em;
+
+	padding: 1em 2em;
+
+	transition: .5s;
+}
+
+main section:nth-child(2) > button:hover {
+	background-color: var(--color-button-hoover);
+}
+
+main section:nth-child(6) {
+	text-align: center;
+}
+
+main section:nth-child(6) ul {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
+
+
+main section:nth-child(6) li {
+	margin-left:1em;
+	margin-right:1em;
+	box-shadow: .1em .1em .1em grey;
+	border-radius: .5em;
+	background-color: var(--color-background-sections);
+}
+
+main section:nth-child(6) button {
+	align-items: center;
+	border-color: var(--color-button);
+	color: var(--color-button);
+	background-color: var(--color-background-sections);
+	border-radius: 3em;
+	padding: 1em 2em;
+	font-weight: bold;	
+
+}
+
+main section:nth-child(6) h3 {
+ padding-left: 1em;
+ padding-right: 1em;
+}
+
+main section:nth-child(6) p {
+	padding-left: 1em;
+	padding-right: 1em;
+   }
+
+main section:nth-child(6) img {
+	padding:0em;
+	width: 20em;
+}
+
+
+img {
+	width: 100%;
+	border-radius: .5em;
+}
+
+ul {
+	list-style: none;
+}
+
+main section:nth-child(7) section {
+	background-color: var(--color-background-sections);
+	margin-left:1em;
+	margin-right:1em;
+	box-shadow: .1em .1em .1em grey;
+	border-radius: .5em;
+}
+
+footer {
+	background-color: var(--color-background-sections);
+	margin-left:1em;
+	margin-right:1em;
+	box-shadow: .1em .1em .1em grey;
+	border-radius: .5em;
+	text-transform: uppercase;
+}
+
+footer button {
+	rotate:90deg;
+	border: none;
+	background-color: var(--color-background-sections);
+	font-weight: bold;
+	font-size: 1.5em;
+
+	transition-duration: 1s;
+}
+
+footer > section.open button{
+	rotate:-180deg;
+}
+
+footer section {
+	padding-left: 1em;
+	padding-right: 1em;
+
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer section ul {
+	display:none;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+
+footer > section.open ul {
+	display:block;
+}
+

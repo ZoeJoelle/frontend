@@ -104,12 +104,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  <img src="readme-images/feedback1.jpg" width="375px" alt="feedback 1">
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik zelf heb het meeste gehad aan de font faces
+  - aria labes en
+  - de uitleg over mijn footer.
 
 </details>
 
@@ -123,17 +122,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben deze week een stuk meer beig geweest met css, het meeste gaat goed, maar zodra ik ergens tegenaan loop kom ik zelf eigenlijk niet op de oplossing. Ook niet met behulp van het internet en dit vind ik wel jammer, want ik wil het graag zelf kunnen aangezien het om vrij simpele dingen soms gaat. Verder is het het zelfde als vorige week, de losse opdrachten gaan erg goed, maar het maken van mn eigen site gaat wat lastiger.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1:    een button in het midden krijgen, een verticale schuifbare lijst maken, eventueel youtube filmpje in html zetten
+  | student 2:    css root, responsive   
+  | student 3:    downloaden gif, postitioneren
+  | student 4        
 
 
   ### Verslag van meeting
