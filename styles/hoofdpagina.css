@@ -1,0 +1,502 @@
+@font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Black.woff2') format('woff2');
+	font-weight: 900;
+
+  }
+
+  @font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Heavy.woff2') format('woff2');
+	font-weight: 700;
+
+  }
+
+  @font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Light.woff2') format('woff2');
+	font-weight: 200;
+
+  }
+
+  @font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Roman.woff2') format('woff2');
+	font-weight: 400;
+
+  }
+
+  @font-face {
+	font-family: 'disneyfont';
+	src: url('dlp_pep_font-webfont.woff') format('woff');
+
+  }
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+
+	--color-text:rgb(37 48 80);
+	--color-background-sections:white;
+	--color-button:rgb(0 75 234);
+	--color-button-hoover:rgb(2 59 185);
+	--color-background:rgb(235 235 235);	
+}
+
+/* SECTIONS */
+
+main section {
+	margin-top: 2em;
+	margin-bottom: 4em;
+	margin-left: 1.2em;
+	margin-right: 1.2em;
+}
+
+
+
+/* HEADER IN DE MAIN */
+
+main header section {
+	position: relative;
+}
+
+main header p {
+	position: absolute;
+	inset: 1em;
+	bottom:1.7em;
+	font-size: 1.6em;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color-background-sections);
+}
+
+main header img {
+	border-radius: 0 0 5em 5em;
+	filter: brightness(60%);
+	/* filter: saturate(80%); */
+	/* filter: contrast(80%); */
+}
+
+
+main > header {
+	margin: 0em;
+	padding: 0em;
+	position: relative;
+
+	background-color: var(--color-background);
+	display: flex;
+	flex-direction: column;
+}
+
+main header > section {
+	padding: 0em;
+	margin: 0em;
+}
+
+main header ul {
+	position: absolute;
+	bottom:-6em;
+	width: 95%;
+	background-color: var(--color-background-sections);
+	border-radius: .5em;
+	padding:1em;
+
+	margin-left: 1em;
+	margin-right: 1em;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	box-shadow: .1em .1em .1em grey;
+}
+
+
+main header li button {
+	width: 10em;
+	font-weight: 700;
+	font-size: .7em;
+}
+
+
+main header ul img {
+	width: auto;
+	height: 3.5em;
+	padding-bottom: 1em;
+}
+
+main header > img {
+	width: 100%;
+	height: auto;
+	padding: 0em;
+	margin: 0em;
+}
+
+
+
+
+/* SECTION VAKANTIE BOEKEN? */
+
+main section:nth-child(2) {
+	text-align: center;
+	margin-top: 7em;
+}
+
+main section:nth-child(2) h2 {
+	font-weight:900;
+
+}
+
+main section:nth-child(2) > button {
+	border-color: var(--color-button);
+	background-color: var(--color-button);
+	color: var(--color-background);
+	border-radius: 3em;
+
+	padding: 1em 2em;
+
+	transition: .5s;
+}
+
+main section:nth-child(2) > button:hover {
+	background-color: var(--color-button-hoover);
+}
+
+
+
+
+
+/* SECTION SYMPHONY */
+
+main section:nth-child(3) > button {
+	display: grid;
+	/* place-items: center; */
+	margin: auto;
+}
+
+
+main section:nth-child(3) h2 {
+    font-weight: 900;
+	font-size: 1.3em;
+	padding-left: 1em;
+}
+
+main section:nth-child(3) p {
+    font-size: .88em;
+	padding-left: 1.4em;
+	line-height: 1.5em;
+}
+
+
+
+
+/* SECTION VIDEO */
+
+main section:nth-child(4) {
+	text-align: center;
+}
+
+main section:nth-child(4) h2 {
+	font-weight: 900;
+}
+
+iframe {
+	width: 17em;
+	border-radius: 1em;
+	border-color: var(--color-background-sections);
+	border-style: solid;
+	border-width: .8em;
+	box-shadow: .1em .1em .1em grey;
+
+	/* height: 10em; */
+}
+
+
+
+
+/* SECTION KERST */
+
+main section:nth-child(5) > button{
+	display: grid;
+	margin: auto;
+}
+
+main section:nth-child(5) h2 {
+    font-weight: 900;
+	font-size: 1.2em;
+	width: 20em;
+	line-height: 1.3em;
+	padding-left: 1em;
+}
+
+main section:nth-child(5) p {
+    font-size: .88em;
+	padding-left: 1.4em;
+	line-height: 1.5em;
+}
+
+
+/* SECTIOON HOTELS */
+
+main section:nth-child(6) {
+	text-align: center;
+	position: relative;
+	padding-bottom: 2.5em;
+}
+
+main section:nth-child(6) ul::-webkit-scrollbar {
+	display: none;
+}
+
+main section:nth-child(6) ul {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	overflow-x: scroll;
+	/* overflow-y: hidden; */
+	overscroll-behavior: contain auto;
+	/* -webkit-overflow-scrolling: touch; */
+	scrollbar-width: none;
+	/* scrollbar-height: none; */
+
+	margin: 0em;
+	padding: .2em;
+}
+
+main section:nth-child(6) li {
+	margin-left:.5em;
+	margin-right:.5em;
+	box-shadow: .1em .1em .1em grey;
+	border-radius: .5em;
+	background-color: var(--color-background-sections);
+}
+
+
+main section:nth-child(6) h2 {
+	padding-bottom: 1.1em;
+	font-weight: 900;
+}
+
+main section:nth-child(6) button {
+	align-items: center;
+	border-color: var(--color-button);
+	color: var(--color-button);
+	background-color: var(--color-background-sections);
+	border-radius: 3em;
+	padding: 1em 2em;
+	font-weight: bold;
+	padding-bottom: 1em;
+
+	transition: 1s;
+	
+	display: grid;
+	/* place-items: center; */
+	margin: auto;
+	/* margin-top: 2em;
+    margin-bottom: 1em; */
+}
+
+/* main section:nth-child(6) button:nth-child(1) {
+	margin-top: 20em;
+} */
+
+
+main section:nth-child(6) button:hover {
+	background-color: var(--color-background);
+}
+
+main section:nth-child(6) h3 {
+   padding-left: 1.3em;
+   padding-right: 1em;
+   font-weight: 900;
+   font-size: 1.3em;
+}
+
+main section:nth-child(6) p {
+	padding-left: 1.88em;
+	padding-right: 1em;
+	padding-bottom:0;
+	font-size: .88em;
+	line-height: 1.5;
+   }
+
+main section:nth-child(6) img {
+	padding:0em;
+	width: 19em;
+}
+
+
+
+section nav {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+
+	margin: 0;
+	padding: 0;
+}
+section nav > ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	display:flex;
+	justify-content:center;
+	
+}
+
+section nav > ul a{
+	display:block;
+	width:.7em;
+    aspect-ratio: 1;
+	background-color:var(--color-button);
+	border-radius:50%;
+	border-color: var(--color-text);
+}
+
+
+
+/* SECTION KALENDER */
+
+main section:nth-child(7) section {
+	background-color: var(--color-background-sections);
+	margin:0;
+	border-radius: 1em;
+	/* margin: 0 1em; */
+	padding: 0;
+}
+
+main section:nth-child(7) > h2{
+	text-align: center;
+	margin: 0 3em;
+	font-weight: 900;
+	font-size: 1.45em;
+}
+
+main section:nth-child(7) > p {
+	text-align: center;
+	line-height: 1.2em;
+}
+
+main section:nth-child(7) > P:nth-of-type(3) {
+	margin-top: 6em;
+}
+
+main section:nth-child(7) > P:nth-of-type(4) {
+	text-align: left;
+	font-size: .9em;
+}
+
+main section:nth-child(7) > P:nth-of-type(5) {
+	text-align: left;
+	font-size: .9em;
+}
+
+main section:nth-child(7) > P:nth-of-type(6) {
+	font-size: .9em;
+	margin-top: 6em;
+}
+
+main section:nth-child(7) li {
+	display: flex;
+	flex-direction: row-reverse;
+	font-size: 0.9em;
+	margin: 3em;
+}
+
+main section:nth-child(7) li img {
+	height: 3.2em;
+	width: auto;
+	padding-right: 1em;
+}
+
+
+main section:nth-child(7) section select {
+	width: 12em;
+	margin: .5em;
+	padding: .5em;
+	border-radius: .3em;
+	font-size: .9em;
+
+}
+
+main section:nth-child(7) section:nth-of-type(1) p:last-of-type {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	align-items: center;
+	gap:.5em;
+	font-size: 0.82em;
+	line-height: 1em;
+	margin: 1em;
+	background-color: var(--color-background);
+	padding: 1em;
+	border-radius: .5em;
+
+}
+
+main section:nth-child(7) section:nth-of-type(1) p:last-of-type img {
+	height: 2.1em;
+	width: auto;
+}
+
+main section:nth-child(7) section:nth-of-type(1) button {
+	border-radius: 0;
+	border-color: var(--color-background);
+	background-color: var(--color-background);
+}
+
+main section:nth-child(7) section:nth-of-type(2) {
+	box-shadow: .1em .1em .1em grey;
+}
+
+main section:nth-child(7) section:nth-of-type(1) input {
+	width: 90%;
+}
+
+main section:nth-child(7) section:nth-of-type(2) img {
+	margin: 2.2em;
+	height: 20em;
+	width: auto;
+}
+
+main section:nth-child(7) section:nth-of-type(2) p {
+	font-size: .75em;
+	text-align: left;
+	padding-bottom: 1em;
+	padding-left: 2em;
+
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	align-items: center;
+}
+
+main section:nth-child(7) section:nth-of-type(2) p img {
+	height: 1.5em;
+	padding: 0;
+	margin: 0;
+	padding-right: 1em;
+}

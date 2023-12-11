@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/resaurantspagina.jpg" width="375px" alt="pagina met informatie over alle restaurants in Disney">
+  <img src="readme-images/jaarkaartpagina.png" width="375px" alt="pagina met informatie over alle jaarkaarten van Disney">
  
 </details>
 

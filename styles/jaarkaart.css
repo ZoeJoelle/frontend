@@ -1,0 +1,708 @@
+@font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Black.woff2') format('woff2');
+	font-weight: 900;
+
+  }
+
+  @font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Heavy.woff2') format('woff2');
+	font-weight: 700;
+
+  }
+
+  @font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Light.woff2') format('woff2');
+	font-weight: 200;
+
+  }
+
+  @font-face {
+	font-family: 'inspire';
+	src: url('InspireTWDC-Roman.woff2') format('woff2');
+	font-weight: 400;
+
+  }
+
+  @font-face {
+	font-family: 'disneyfont';
+	src: url('dlp_pep_font-webfont.woff') format('woff');
+
+  }
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+
+	--color-text:rgb(37 48 80);
+	--color-background-sections:white;
+	--color-button:rgb(0 75 234);
+	--color-button-hoover:rgb(2 59 185);
+	--color-background:rgb(235 235 235);
+    --color-brons:rgb(138, 81, 70);
+    --color-zilver:rgb(149, 153, 155);
+    --color-goud:rgb(220, 169, 49);
+}
+
+/* HEADER IN DE MAIN */
+
+main header section {
+	position: relative;
+}
+
+main header p {
+	position: absolute;
+	inset: 1em;
+	bottom:1.7em;
+	font-size: 1.6em;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color-background-sections);
+}
+
+main header img {
+	border-radius: 0 0 5em 5em;
+	filter: brightness(60%);
+	/* filter: saturate(80%); */
+	/* filter: contrast(80%); */
+}
+
+
+main > header {
+	margin: 0em;
+	padding: 0em;
+	position: relative;
+
+	background-color: var(--color-background);
+	display: flex;
+	flex-direction: column;
+}
+
+main header > section {
+	padding: 0em;
+	margin: 0em;
+}
+
+main header ul {
+	position: absolute;
+	bottom:-5em;
+	width: 95%;
+	background-color: var(--color-background-sections);
+	border-radius: .5em;
+	padding:1em;
+
+	margin-left: 1em;
+	margin-right: 1em;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	box-shadow: .1em .1em .1em grey;
+}
+
+
+main header li button {
+	width: 12em;
+	font-weight: 700;
+	font-size: .7em;
+}
+
+
+main header ul img {
+	width: auto;
+	height: 4em;
+	padding-bottom: 1em;
+}
+
+main header > img {
+	width: 100%;
+	height: auto;
+	padding: 0em;
+	margin: 0em;
+}
+
+
+
+/* SECTION TEKST */
+
+section:nth-child(2) {
+    text-align: center;
+	margin-top: 7em;
+}
+
+section:nth-child(2) h2 {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+section:nth-child(2) p {
+    font-size: 1.2em;
+}
+
+
+
+/* JAARKAART SECTION BRONS */
+
+section:nth-child(3) {
+    background-color: var(--color-background-sections);
+    border-radius: 1em;
+    margin: 0 6em 0 6em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(3) img {
+    height: 2.5em;
+    width: 2.5em;
+    padding: .4em;
+    margin: .4em;
+    background-color: var(--color-background-sections);
+    border-radius: 3em;
+
+    display: grid;
+	place-items: center;
+	margin: auto;
+}
+
+section:nth-child(3) section {
+    background-color: var(--color-brons);
+    width: 95%;
+    padding: .4em;
+    margin: .5em;
+    border-radius: .8em;
+}
+
+
+
+
+section:nth-child(3) h3 {
+    font-weight: 900;
+    font-size: 1.3em;
+    color: var(--color-text);
+    margin: .6em 0 .6em 0;
+    padding: 0;
+}
+
+section:nth-child(3) p {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0 0 .8em 0;
+    padding: 0;
+}
+
+
+
+
+
+section:nth-child(3) button:first-of-type {
+    width: 95%;
+    background-color: var(--color-button);
+    color: var(--color-background-sections);
+    font-size: 1em;
+    margin: 1em 0 0 0;
+
+    transition: 1s;
+}
+
+section:nth-child(3) button:first-of-type:hover {
+    background-color: var(--color-button-hoover);
+}
+
+
+
+
+
+section:nth-child(3) button:nth-of-type(2) {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-button);
+    border-style: none;
+    width: 95%;
+    margin: .6em 0 .5em 0;
+
+    transition: 1s;
+}
+
+section:nth-child(3) button:nth-of-type(2):hover {
+    background-color: var(--color-background);
+}
+
+
+
+
+
+
+section:nth-child(3) button:nth-of-type(3) img {
+    width: 2em;
+    height: auto;
+    background-color: var(--color-background-sections);
+}
+
+section:nth-child(3) button:nth-of-type(3) img:hover {
+    background-color: var(--color-background);
+}
+
+section:nth-child(3) button:nth-of-type(3) {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-button);
+    border-style: none;
+    width: 95%;
+    margin: .6em 0 .5em 0;
+
+    transition: 1s;
+}
+
+section:nth-child(3) button:nth-of-type(3):hover {
+    background-color: var(--color-background);
+}
+
+
+
+
+
+
+/* JAARKAART SECTION ZILVER */
+
+section:nth-child(4) {
+    background-color: var(--color-background-sections);
+    border-radius: 1em;
+    margin: 1em 6em 0 6em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(4) img {
+    height: 2.5em;
+    width: 2.5em;
+    padding: .4em;
+    margin: .4em;
+    background-color: var(--color-background-sections);
+    border-radius: 3em;
+
+    display: grid;
+	place-items: center;
+	margin: auto;
+}
+
+section:nth-child(4) section {
+    background-color: var(--color-zilver);
+    width: 95%;
+    padding: .4em;
+    margin: .5em;
+    border-radius: .8em;
+}
+
+
+
+
+
+section:nth-child(4) h3 {
+    font-weight: 900;
+    font-size: 1.3em;
+    color: var(--color-text);
+    margin: .6em 0 .6em 0;
+    padding: 0;
+}
+
+section:nth-child(4) p {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0 0 .8em 0;
+    padding: 0;
+}
+
+
+
+
+
+section:nth-child(4) button:first-of-type {
+    width: 95%;
+    background-color: var(--color-button);
+    color: var(--color-background-sections);
+    font-size: 1em;
+    margin: 1em 0 0 0;
+
+    transition: 1s;
+}
+
+section:nth-child(4) button:first-of-type:hover {
+    background-color: var(--color-button-hoover);
+}
+
+
+
+
+
+section:nth-child(4) button:nth-of-type(2) {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-button);
+    border-style: none;
+    width: 95%;
+    margin: .6em 0 .5em 0;
+
+    transition: 1s;
+}
+
+section:nth-child(4) button:nth-of-type(2):hover {
+    background-color: var(--color-background);
+}
+
+
+
+
+
+
+section:nth-child(4) button:nth-of-type(3) img {
+    width: 2em;
+    height: auto;
+    background-color: var(--color-background-sections);
+}
+
+section:nth-child(4) button:nth-of-type(3) img:hover {
+    background-color: var(--color-background);
+}
+
+section:nth-child(4) button:nth-of-type(3) {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-button);
+    border-style: none;
+    width: 95%;
+    margin: .6em 0 .5em 0;
+
+    transition: 1s;
+}
+
+section:nth-child(4) button:nth-of-type(3):hover {
+    background-color: var(--color-background);
+}
+
+
+
+/* JAARKAART SECTION GOUD */
+
+section:nth-child(5) {
+    background-color: var(--color-background-sections);
+    border-radius: 1em;
+    margin: 1em 6em 2.5em 6em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(5) img {
+    height: 2.5em;
+    width: 2.5em;
+    padding: .4em;
+    margin: .4em;
+    background-color: var(--color-background-sections);
+    border-radius: 3em;
+
+    display: grid;
+	place-items: center;
+	margin: auto;
+}
+
+section:nth-child(5) section {
+    background-color: var(--color-goud);
+    width: 95%;
+    padding: .4em;
+    margin: .5em;
+    border-radius: .8em;
+}
+
+
+
+
+
+section:nth-child(5) h3 {
+    font-weight: 900;
+    font-size: 1.3em;
+    color: var(--color-text);
+    margin: .6em 0 .6em 0;
+    padding: 0;
+}
+
+section:nth-child(5) p {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0 0 .8em 0;
+    padding: 0;
+}
+
+
+
+
+
+section:nth-child(5) button:first-of-type {
+    width: 95%;
+    background-color: var(--color-button);
+    color: var(--color-background-sections);
+    font-size: 1em;
+    margin: 1em 0 0 0;
+
+    transition: 1s;
+}
+
+section:nth-child(5) button:first-of-type:hover {
+    background-color: var(--color-button-hoover);
+}
+
+
+
+
+
+section:nth-child(5) button:nth-of-type(2) {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-button);
+    border-style: none;
+    width: 95%;
+    margin: .6em 0 .5em 0;
+
+    transition: 1s;
+}
+
+section:nth-child(5) button:nth-of-type(2):hover {
+    background-color: var(--color-background);
+}
+
+
+
+
+
+
+section:nth-child(5) button:nth-of-type(3) img {
+    width: 2em;
+    height: auto;
+    background-color: var(--color-background-sections);
+}
+
+section:nth-child(5) button:nth-of-type(3) img:hover {
+    background-color: var(--color-background);
+}
+
+section:nth-child(5) button:nth-of-type(3) {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-button);
+    border-style: none;
+    width: 95%;
+    margin: .6em 0 .5em 0;
+
+    transition: 1s;
+}
+
+section:nth-child(5) button:nth-of-type(3):hover {
+    background-color: var(--color-background);
+}
+
+
+
+
+/* MAIN BUTTON */
+
+main > button {
+    border-radius: 3em;
+    padding: 1em;
+    border-color: var(--color-button);
+    color: var(--color-button);
+    font-weight: 700;
+    font-size: .9em;
+    padding: 1em 2em 1em 2em;
+    
+
+    display: grid;
+	place-items: center;
+	margin: auto;
+}
+
+
+
+
+/* SECTION REDENEN */
+
+section:nth-child(7) {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section:nth-child(7) h2 {
+    font-weight: 900;
+    font-size: 1.4;
+}
+
+section:nth-child(7) img {
+    height: 7em;
+    width: auto;
+}
+
+section:nth-child(7) p {
+    width: 12.3em;
+    font-weight: 900;
+    margin-left: 1em;
+    
+    
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+   
+}
+
+
+
+
+/* HOE WERKT HET */
+
+section:nth-child(8) {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section:nth-child(8) h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.4;
+    width: 100%;
+}
+
+section:nth-child(8) img {
+    height: 6em;
+    width: auto;
+}
+
+section:nth-child(8) p {
+    width: 11em;
+    font-weight: 900;
+    margin-left: 1em;
+    
+    
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+/* SECTION FAQ */
+
+section:nth-child(9) h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.4;
+}
+
+section:nth-child(9) section img {
+   width: 1em;
+   height: auto;
+}
+
+section:nth-child(9) section p {
+    font-weight: 900;
+    font-size: 1em;
+    text-align: left;
+    padding: 1em 2em 1em 1em ;
+}
+
+section:nth-child(9) section {
+    background-color: var(--color-background-sections);
+    border-radius: 1em;
+    margin: 1em;
+}
+
+
+
+/* SECTION VEEL TEKST */
+section:nth-child(10) {
+    margin-top: 4em;
+    margin-bottom: 5em;
+}
+
+section:nth-child(10) p{
+    margin: 1em;
+    text-align: center;
+    font-size: .9em;
+}
+
+section:nth-child(10) a {
+    color: var(--color-button);
+    text-decoration: underline;
+}
+
+
+/* SECTION BETAALWIJZE */
+
+section:nth-child(11) {
+    background-color: var(--color-background-sections);
+    margin-bottom: 2em;
+}
+
+section:nth-child(11) img {
+    margin-top: 7em;
+    width: 12em;
+    margin-left: 2.5em;
+}
+
+section:nth-child(11) p:first-of-type img {
+    height: .8em;
+    width: auto;
+    margin: 0 0 0 -.4em;
+    padding: 0;
+}
+
+section:nth-child(11) p:first-of-type {
+    font-weight: 700;
+    font-size: .9em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+section:nth-child(11) p {
+    margin: 0 0 0 3.1em;
+    font-size: .8em;
+    line-height: 1.5em;
+}
+
+section:nth-child(11) p:last-of-type {
+    padding-bottom: 7em;
+}
+
+

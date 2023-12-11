@@ -9,35 +9,40 @@
 	<title>Howdy FED2324</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/hoofdpagina.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
+	<button>Feedback</button>
 	<header>
 		<h1 aria-label="Welkom bij de site van Disneyland Parijs"> 
 			<img src="images/logo.png" alt=""> 
 		</h1>
-		<button>menu</button>
+		<button><img src="images/hamburgermenu.png" alt="">Menu</button>
 		<nav>
-			<button><img>openingstijden</button>
-			<button><img></button>
-			<li>De 2 parken</li>
-			<li>Hotels en resorts</li>
-			<li>Restaurants</li>
-			<li>Tickets en verblijven</li>
-			<li>Bereid je bezoek voor</li>
+			<button aria-label="sluit het menu"><img src="images/close.png" alt=""></button>
+			<img src="images/knoppen.nav.png" alt="">
+			<ul>
+				<li>De 2 parken <img src="images/pijltje.png" alt=""></li>
+				<li>Hotels en resorts <img src="images/pijltje.png" alt=""></li>
+				<li>Restaurants <img src="images/pijltje.png" alt=""></li>
+				<li>Tickets en verblijven <img src="images/pijltje.png" alt=""></li>
+				<li>Bereid je bezoek voor <img src="images/pijltje.png" alt=""></li>
+			</ul>
 		</nav>
+		<button><img src="images/zoeken.png" alt="zoekbalk"></button>
 	</header>
 	<main>
 		<header>
 			<section>
 				<img src="images/foto.header.webp" alt="foto van lachende mensen bij het disney kasteel">
-				<p>waar magie tot leven komt</p>
+				<p>Waar magie tot leven komt</p>
 			</section>
 			<ul>
-				<li><button>symphony of colours</button></li>
-				<li><button>shows en parades</button></li>
-				<li><button>boek je verblijf</button></li>
+				<li><button><img src="images/icoon1.png" alt="">Symphony of colours</button></li>
+				<li><button><img src="images/icoon2.png" alt="">Shows en parades</button></li>
+				<li><button><img src="images/icoon3.png" alt="">Boek je verblijf</button></li>
 			</ul>
 		</header>
 		<section>
@@ -50,14 +55,15 @@
 		<section>
 			<img src="images/symphony.jpg" alt="foto van de droneshow"> 
 			<h2>Disney Symphony of Colours</h2>
-			<p>In 2024 maken we het voorjaar nog gezelliger met kleurrijke, muzikale en magische tonen tijdens Disney Symphony of Colours in het Disneyland Park. Ontdek een gloednieuwe droneshow (van 8 januari t/m eind september 2024), een nieuwe dagshow met adembenemende kleuren (vanaf 10 februari t/m eind september 2024) en de glinsterende nieuwe decoraties op Main Street, U.S.A. (van februari t/m begin april 2024).</p>
+			<p>In 2024 maken we het voorjaar nog gezelliger met kleurrijke, muzikale en magische tonen tijdens Disney Symphony of Colours in het Disneyland Park. Bewonder de gloednieuwe droneshow Disney Electrical Sky Parade die van 8 januari t/m 30 september het Park ‘s avonds zal verlichten met adembenemende kleuren, de nieuwe dagshow A Million Splashes of Colour van 10 februari t/m 30 september en van 10 februari t/m 5 mei de decoraties op Main Street, U.S.A. die Tinkelbel en Sneeuwkristal hebben gemaakt met hun elfenstof.</p>
 			<button>Ontdek het programma</button>
 		</section>
 		<section>
 			<h2>Nieuwe herinneringen maken</h2>
 			<p>Maak, net als onze andere gasten uit Nederland, nieuwe herinneringen bij onze spectaculaire shows.</p>
 			<p>Dans met Mickey, zing met Elsa of bewonder beroemde Pixar Figuren. Van The Lion King: Rhythms of the Pride Lands tot Mickey and the Magician, ieder seizoen droom je weg bij adembenemende shows in Broadway-stijl(2).</p>
-			<iframe>https://youtu.be/MgYBmTA1cKs</iframe>
+			<iframe src="https://www.youtube.com/embed/MgYBmTA1cKs" title="Nieuwe herinneringen maken | Disneyland Paris" 
+			frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</section>
 		<section>
 			<img src="images/parade.jpg" alt="foto van de parade"> 
@@ -69,39 +75,51 @@
 		<section>
 			<h2>Hotels</h2>
 			<ul>
-				<li>
+				<li id="h1">
 					<img src="images/disneyhotel.webp" alt="foto van Disneyland hotel">
 					<h3>Disneyland Hotel</h3>
-					<p>In het vernieuwde, majestueuze Disneyland Hotel, voel je je koninklijk. Dit 5-sterrelhotel bij de ingang van het Disnetland Park biedt koninklijke services voor alle leeftijden, terwijl je magische Disney verhalen viert.</p>
+					<p>In het vernieuwde, majestueuze Disneyland Hotel, voel je je koninklijk. Dit 5-sterrelhotel bij de ingang van het Disneyland Park biedt koninklijke services voor alle leeftijden, terwijl je magische Disney verhalen viert.</p>
 					<button>Ontdek dit hotel</button>
 				</li>
-				<li>
+				<li id="h2">
 					<img src="images/Newport.webp" alt="foto van hotel newport bay"> 
 					<h3>Disney Newport Bay CLub</h3>
 					<p>Hijs de zielen en zet koers naar Disney Newport Bay Club. Kapiteins die geen genoeg krijgen van het ruime sop kunnen een duik nemen in het verwarmde binnen- en buitenzwembad en daarna uitrusten in deze thuishaven aan Lake Disney.</p>
 					<button>Ontdek dit hotel</button>
 				</li>
-				<li>
+				<li id="h3">
 					<img src="images/cheyenne.webp" alt="foto van hotel Cheyenne"> 
 					<h3>Disney Hotel Cheyenne</h3>
 					<p>Zie ik daar Woody en Jessie? Galoppeer snel achter ze aan richting Disney hotel Cheyenne. IN het levendige Pioniersstadje ervaar je hoe het is om in het Wilde Westen te wonen. Stof je cowboyhoed af en dan zien we je daar.</p>
 					<button>Ontdek dit hotel</button>
 				</li>
-				<li>
+				<li id="h4">
 					<img src="images/davycrockett.webp" alt="foto van Davy Crocket Ranch"> 
 					<h3>Disney Davy Crockett Ranch</h3>
 					<p>Pioniers opgelet! Op maar 15 minuten rijden van de Disney Parken ligt Disney Davy Crocket Ranch. In dit vakantiepark middenin het bos kun je heerlijk tot rust komen in je eigen blokhut of je ontdekkingstocht voortzetten in het zwembad of de buitenspeeltuin.</p>
 					<button>Ontdek dit hotel</button>
 				</li>
 			</ul>
+			<nav>
+				<ul>
+					<li><a href="#h1" aria-label="hotel 1"></a></li>
+					<li><a href="#h2"></a></li>
+					<li><a href="#h3"></a></li>
+					<li><a href="#h4"></a></li>
+				</ul>
+			</nav>
 		</section>
 		<section>
 			<h2>Profiteer van onze flexibele voorwaarden</h2>
 			<p>Boek nu je verblijf, je kunt jouw boeking tot 7 dagen voor aankomst gratis wijzigen of annuleren(1), in flexibele termijnen betalen en momenteel betaal je geen boekingskosten, dit is het ideale moment om te boeken!</p>
 			<p>Plan nu je verblijf met onze handige prijskalender, vergelijk verschillende periodes* en vind het ideale moment voor jouw reis naar het hart van de magie!</p>
 			<p>De prijs van je verblijf is gebaseerd op je aankomstdatum en is de totaalprijs voor alle gasten.</p>
+			<ul>
+				<li>De prijs van je verblijf is gebaseerd op je aankomstdatum en is de totaalprijs voor alle gasten. <img src="images/calender.svg" alt=""> </li>
+				<li>De prijsschattingen zijn gebaseerd op de prijzen die eenmaal per dag om 8.00 uur worden bijgewerkt.<img src="images/rondje.svg" alt=""></li>
+			</ul>
 			<section>
-				<select name="verblijfsduur" id="verblijfsduur">
+				<select name="verblijfsduur" id="verblijfsduur" >
 					<option value="A1">3 dagen/2 nachten</option>
 					<option value="A2">4 dagen/3 nachten</option>
 					<option value="A3">5 dagen/4 nachten</option>
@@ -117,13 +135,23 @@
 					<option value="B1">Center Parcs Villages Nature Paris</option>
 				</select>
 				<select name="Kamers en gasten" id="Kamers en gasten" size="">
-
+					
 				</select>
 				<button>Prijs per pers./nacht</button>
 				<button>Totale prijs</button>
-				<p>Totale prijs voor alle gasten voor 2 nachten en 3 dagen in beide Disney Parken</p>
+				<p>
+					<img src="images/tickets.svg" alt="">
+					Totale prijs voor alle gasten voor 2 nachten en 3 dagen in beide Disney Parken
+				</p>
 				<input type="range" name="price" min="€580" max="€1500" />
-				<p>Controleer de beschikbaarheid in de volgende stap.</p>
+				
+			</section>
+			<section>
+				<img src="images/calender.png" alt="">
+				<p>
+					<img src="images/zoek.svg" alt="">
+					Controleer de beschikbaarheid in de volgende stap.
+				</p>
 			</section>
 			<p>*De prijzen die in de kalender worden weergegeven, zijn schattingen op basis van de prijzen die elke ochtend worden geregistreerd en eenmaal per dag worden bijgewerkt. Prijzen kunnen veranderen afhankelijk van het moment waarop je boekt. De kalender is alleen informatief en niet contractueel. Alle prijzen zijn naar boven afgerond op de volgende Euro.</p>
 			<p>(1) Volledige terugbetaling is tot 7 dagen voor aankomst mogelijk, exclusief verzekeringen indien van toepassing. Je kunt wijzigen tegen het actuele beschikbare tarief.</p>
@@ -190,7 +218,26 @@
 				<li><a href="">Disney Parken Blog</a></li>
 			</ul>
 		</section>
+		<p>
+			Blijf op de hoogte
+			<img src="images/socialemedia.png" alt="">
+		</p>
+		<p>
+			Heb je een vraag over onze producten of aanbiedingen? Bel onze Nederlandstalige vakantie-experts op
+		</p>	
+		<button><img src="images/bellen.png" alt="">0202 7218974</button>
+		<p>
+			Lokaal tarief
+		</p>
+		<p>
+			We hanteren gezondheids- en veiligheidsmaatregelen in Disneyland Paris om onze gasten en Cast Members te beschermen. Meer info​
+		</p>
+		<p>
+			© Disney • Pixar © & TM Lucasfilm Ltd. © MARVEL. Alle rechten voorbehouden
+		</p>
 	</footer>
+
+	<script src="scripts/script.js"></script>
 </body>
 	
 </html>
