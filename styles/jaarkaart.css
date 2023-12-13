@@ -61,9 +61,11 @@
     --color-brons:rgb(138, 81, 70);
     --color-zilver:rgb(149, 153, 155);
     --color-goud:rgb(220, 169, 49);
+    --color-hover-main-button: rgb(222, 222, 222);
 }
 
 /* HEADER IN DE MAIN */
+
 
 main header section {
 	position: relative;
@@ -83,17 +85,21 @@ main header p {
 	color: var(--color-background-sections);
 }
 
-main header img {
+main header img:first-of-type {
 	border-radius: 0 0 5em 5em;
 	filter: brightness(60%);
 	/* filter: saturate(80%); */
 	/* filter: contrast(80%); */
 }
 
+main header img:nth-child(2) {
+    display: none;
+}
+
 
 main > header {
-	margin: 0em;
-	padding: 0em;
+	margin: 0;
+	padding: 0;
 	position: relative;
 
 	background-color: var(--color-background);
@@ -149,17 +155,17 @@ main header > img {
 
 /* SECTION TEKST */
 
-section:nth-child(2) {
+main > section:first-of-type {
     text-align: center;
 	margin-top: 7em;
 }
 
-section:nth-child(2) h2 {
+section:nth-of-type(1) h2 {
     font-size: 1.5em;
     font-weight: 900;
 }
 
-section:nth-child(2) p {
+section:nth-of-type(1) p {
     font-size: 1.2em;
 }
 
@@ -167,17 +173,19 @@ section:nth-child(2) p {
 
 /* JAARKAART SECTION BRONS */
 
-section:nth-child(3) {
+section:nth-of-type(2) section:first-of-type {
     background-color: var(--color-background-sections);
     border-radius: 1em;
-    margin: 0 6em 0 6em;
+    margin: 0 0 0 6em;
+    width: 18em;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section:nth-child(3) img {
+section:nth-of-type(2) section:first-of-type img {
     height: 2.5em;
     width: 2.5em;
     padding: .4em;
@@ -190,7 +198,7 @@ section:nth-child(3) img {
 	margin: auto;
 }
 
-section:nth-child(3) section {
+section:nth-of-type(2) section:first-of-type div {
     background-color: var(--color-brons);
     width: 95%;
     padding: .4em;
@@ -201,7 +209,7 @@ section:nth-child(3) section {
 
 
 
-section:nth-child(3) h3 {
+section:nth-of-type(2) section:first-of-type h3 {
     font-weight: 900;
     font-size: 1.3em;
     color: var(--color-text);
@@ -209,7 +217,7 @@ section:nth-child(3) h3 {
     padding: 0;
 }
 
-section:nth-child(3) p {
+section:nth-of-type(2) section:first-of-type p {
     font-weight: 700;
     font-size: 1em;
     margin: 0 0 .8em 0;
@@ -220,7 +228,7 @@ section:nth-child(3) p {
 
 
 
-section:nth-child(3) button:first-of-type {
+section:nth-of-type(2) section:first-of-type button:first-of-type {
     width: 95%;
     background-color: var(--color-button);
     color: var(--color-background-sections);
@@ -230,7 +238,7 @@ section:nth-child(3) button:first-of-type {
     transition: 1s;
 }
 
-section:nth-child(3) button:first-of-type:hover {
+section:nth-of-type(2) section:first-of-type button:first-of-type:hover {
     background-color: var(--color-button-hoover);
 }
 
@@ -238,7 +246,7 @@ section:nth-child(3) button:first-of-type:hover {
 
 
 
-section:nth-child(3) button:nth-of-type(2) {
+section:nth-of-type(2) section:first-of-type button:nth-of-type(2) {
     font-weight: 700;
     font-size: 1em;
     color: var(--color-button);
@@ -249,7 +257,7 @@ section:nth-child(3) button:nth-of-type(2) {
     transition: 1s;
 }
 
-section:nth-child(3) button:nth-of-type(2):hover {
+section:nth-of-type(2) section:first-of-type button:nth-of-type(2):hover {
     background-color: var(--color-background);
 }
 
@@ -258,17 +266,19 @@ section:nth-child(3) button:nth-of-type(2):hover {
 
 
 
-section:nth-child(3) button:nth-of-type(3) img {
+section:nth-of-type(2) section:first-of-type button:nth-of-type(3) img {
     width: 2em;
     height: auto;
     background-color: var(--color-background-sections);
+
+    transition: 1s;
 }
 
-section:nth-child(3) button:nth-of-type(3) img:hover {
+section:nth-of-type(2) section:first-of-type button:nth-of-type(3) img:hover {
     background-color: var(--color-background);
 }
 
-section:nth-child(3) button:nth-of-type(3) {
+section:nth-of-type(2) section:first-of-type button:nth-of-type(3) {
     font-weight: 700;
     font-size: 1em;
     color: var(--color-button);
@@ -279,9 +289,53 @@ section:nth-child(3) button:nth-of-type(3) {
     transition: 1s;
 }
 
-section:nth-child(3) button:nth-of-type(3):hover {
+section:nth-of-type(2) section:first-of-type.open button:nth-of-type(3) img{
+    rotate:-180deg;
+}
+
+section:nth-of-type(2) section:first-of-type button:nth-of-type(3):hover {
     background-color: var(--color-background);
 }
+
+section:nth-of-type(2) section:first-of-type li {
+    display: flex;
+	flex-direction: row;
+	text-align: left;
+    margin: 0;
+    padding: 0 0 1.5em 0;
+
+    font-weight: 700;
+    font-size: .9em;
+    color: var(--color-text);
+}
+
+section:nth-of-type(2) section:first-of-type li img {
+    margin: 0;
+    padding: 0 1em 0 1em;
+    height: .8em;
+    width: auto;
+}
+
+
+
+section:nth-of-type(2) section:first-of-type ul {
+	display:none;
+	width:100%;
+	margin:0;
+	padding:0 ;
+	list-style:none;
+	
+    
+}
+
+section:nth-of-type(2) section:first-of-type.open ul {
+	display:block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 
 
@@ -290,17 +344,18 @@ section:nth-child(3) button:nth-of-type(3):hover {
 
 /* JAARKAART SECTION ZILVER */
 
-section:nth-child(4) {
+section:nth-of-type(2) section:nth-of-type(2) {
     background-color: var(--color-background-sections);
     border-radius: 1em;
-    margin: 1em 6em 0 6em;
+    margin: 1em 0 0 6em;
+    width: 18em;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section:nth-child(4) img {
+section:nth-of-type(2) section:nth-of-type(2) img {
     height: 2.5em;
     width: 2.5em;
     padding: .4em;
@@ -313,7 +368,7 @@ section:nth-child(4) img {
 	margin: auto;
 }
 
-section:nth-child(4) section {
+section:nth-of-type(2) section:nth-of-type(2) div {
     background-color: var(--color-zilver);
     width: 95%;
     padding: .4em;
@@ -325,7 +380,7 @@ section:nth-child(4) section {
 
 
 
-section:nth-child(4) h3 {
+section:nth-of-type(2) section:nth-of-type(2) h3 {
     font-weight: 900;
     font-size: 1.3em;
     color: var(--color-text);
@@ -333,7 +388,7 @@ section:nth-child(4) h3 {
     padding: 0;
 }
 
-section:nth-child(4) p {
+section:nth-of-type(2) section:nth-of-type(2) p {
     font-weight: 700;
     font-size: 1em;
     margin: 0 0 .8em 0;
@@ -344,7 +399,7 @@ section:nth-child(4) p {
 
 
 
-section:nth-child(4) button:first-of-type {
+section:nth-of-type(2) section:nth-of-type(2) button:first-of-type {
     width: 95%;
     background-color: var(--color-button);
     color: var(--color-background-sections);
@@ -354,7 +409,7 @@ section:nth-child(4) button:first-of-type {
     transition: 1s;
 }
 
-section:nth-child(4) button:first-of-type:hover {
+section:nth-of-type(2) section:nth-of-type(2) button:first-of-type:hover {
     background-color: var(--color-button-hoover);
 }
 
@@ -362,7 +417,7 @@ section:nth-child(4) button:first-of-type:hover {
 
 
 
-section:nth-child(4) button:nth-of-type(2) {
+section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(2) {
     font-weight: 700;
     font-size: 1em;
     color: var(--color-button);
@@ -373,7 +428,7 @@ section:nth-child(4) button:nth-of-type(2) {
     transition: 1s;
 }
 
-section:nth-child(4) button:nth-of-type(2):hover {
+section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(2):hover {
     background-color: var(--color-background);
 }
 
@@ -382,17 +437,21 @@ section:nth-child(4) button:nth-of-type(2):hover {
 
 
 
-section:nth-child(4) button:nth-of-type(3) img {
+section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3) img {
     width: 2em;
     height: auto;
     background-color: var(--color-background-sections);
 }
 
-section:nth-child(4) button:nth-of-type(3) img:hover {
+section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3) img:hover {
     background-color: var(--color-background);
 }
 
-section:nth-child(4) button:nth-of-type(3) {
+section:nth-of-type(2) section:nth-of-type(2).open button:nth-of-type(3) img{
+    rotate:-180deg;
+}
+
+section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3) {
     font-weight: 700;
     font-size: 1em;
     color: var(--color-button);
@@ -403,25 +462,61 @@ section:nth-child(4) button:nth-of-type(3) {
     transition: 1s;
 }
 
-section:nth-child(4) button:nth-of-type(3):hover {
+section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3):hover {
     background-color: var(--color-background);
 }
+
+section:nth-of-type(2) section:nth-of-type(2) li {
+    display: flex;
+	flex-direction: row;
+	text-align: left;
+    margin: 0;
+    padding: 0 0 1.5em 0;
+
+    font-weight: 700;
+    font-size: .9em;
+    color: var(--color-text);
+}
+
+section:nth-of-type(2) section:nth-of-type(2) li img {
+    margin: 0;
+    padding: 0 1em 0 1em;
+    height: .8em;
+    width: auto;
+}
+
+section:nth-of-type(2) section:nth-of-type(2) ul {
+	display:none;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+    transition: 1s;
+}
+
+section:nth-of-type(2) section:nth-of-type(2).open ul {
+	display:block;
+}
+
+
 
 
 
 /* JAARKAART SECTION GOUD */
 
-section:nth-child(5) {
+section:nth-of-type(2) section:nth-of-type(3) {
     background-color: var(--color-background-sections);
     border-radius: 1em;
-    margin: 1em 6em 2.5em 6em;
+    margin: 1em 0 2.5em 6em;
+    width: 18em;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section:nth-child(5) img {
+section:nth-of-type(2) section:nth-of-type(3) img {
     height: 2.5em;
     width: 2.5em;
     padding: .4em;
@@ -434,7 +529,7 @@ section:nth-child(5) img {
 	margin: auto;
 }
 
-section:nth-child(5) section {
+section:nth-of-type(2) section:nth-of-type(3) div {
     background-color: var(--color-goud);
     width: 95%;
     padding: .4em;
@@ -446,7 +541,7 @@ section:nth-child(5) section {
 
 
 
-section:nth-child(5) h3 {
+section:nth-of-type(2) section:nth-of-type(3) h3 {
     font-weight: 900;
     font-size: 1.3em;
     color: var(--color-text);
@@ -454,18 +549,19 @@ section:nth-child(5) h3 {
     padding: 0;
 }
 
-section:nth-child(5) p {
+section:nth-of-type(2) section:nth-of-type(3) p {
     font-weight: 700;
     font-size: 1em;
     margin: 0 0 .8em 0;
     padding: 0;
+    text-align: center;
 }
 
 
 
 
 
-section:nth-child(5) button:first-of-type {
+section:nth-of-type(2) section:nth-of-type(3) button:first-of-type {
     width: 95%;
     background-color: var(--color-button);
     color: var(--color-background-sections);
@@ -475,7 +571,7 @@ section:nth-child(5) button:first-of-type {
     transition: 1s;
 }
 
-section:nth-child(5) button:first-of-type:hover {
+section:nth-of-type(2) section:nth-of-type(3) button:first-of-type:hover {
     background-color: var(--color-button-hoover);
 }
 
@@ -483,7 +579,7 @@ section:nth-child(5) button:first-of-type:hover {
 
 
 
-section:nth-child(5) button:nth-of-type(2) {
+section:nth-of-type(2) section:nth-of-type(3) button:nth-of-type(2) {
     font-weight: 700;
     font-size: 1em;
     color: var(--color-button);
@@ -494,7 +590,7 @@ section:nth-child(5) button:nth-of-type(2) {
     transition: 1s;
 }
 
-section:nth-child(5) button:nth-of-type(2):hover {
+section:nth-of-type(2) section:nth-of-type(3) button:nth-of-type(2):hover {
     background-color: var(--color-background);
 }
 
@@ -503,17 +599,17 @@ section:nth-child(5) button:nth-of-type(2):hover {
 
 
 
-section:nth-child(5) button:nth-of-type(3) img {
+section:nth-of-type(2) section:nth-of-type(3) button:last-of-type img {
     width: 2em;
     height: auto;
     background-color: var(--color-background-sections);
 }
 
-section:nth-child(5) button:nth-of-type(3) img:hover {
+section:nth-of-type(2) section:nth-of-type(3) button:last-of-type img:hover {
     background-color: var(--color-background);
 }
 
-section:nth-child(5) button:nth-of-type(3) {
+section:nth-of-type(2) section:nth-of-type(3) button:last-of-type {
     font-weight: 700;
     font-size: 1em;
     color: var(--color-button);
@@ -524,8 +620,41 @@ section:nth-child(5) button:nth-of-type(3) {
     transition: 1s;
 }
 
-section:nth-child(5) button:nth-of-type(3):hover {
+section:nth-of-type(2) section:nth-of-type(3) button:last-of-type:hover {
     background-color: var(--color-background);
+}
+
+section:nth-of-type(2) section:nth-of-type(3) li {
+    display: flex;
+	flex-direction: row;
+	text-align: left;
+    margin: 0;
+    padding: 0 0 1.5em 0;
+
+    font-weight: 700;
+    font-size: .9em;
+    color: var(--color-text);
+}
+
+section:nth-of-type(2) section:nth-of-type(3) li img {
+    margin: 0;
+    padding: 0 1em 0 1em;
+    height: .8em;
+    width: auto;
+}
+
+section:nth-of-type(2) section:nth-of-type(3) ul {
+	display:none;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+    transition: 1s;
+}
+
+section:nth-of-type(2) section:last-of-type.open ul {
+	display:block;
 }
 
 
@@ -542,18 +671,22 @@ main > button {
     font-size: .9em;
     padding: 1em 2em 1em 2em;
     
+    transition: 1s;
 
     display: grid;
 	place-items: center;
 	margin: auto;
 }
 
+main > button:hover {
+    background-color: var(--color-hover-main-button);
+}
 
 
 
 /* SECTION REDENEN */
 
-section:nth-child(7) {
+section:nth-of-type(3) {
 
     display: flex;
     flex-direction: row;
@@ -561,17 +694,17 @@ section:nth-child(7) {
     justify-content: center;
 }
 
-section:nth-child(7) h2 {
+section:nth-of-type(3) h2 {
     font-weight: 900;
     font-size: 1.4;
 }
 
-section:nth-child(7) img {
+section:nth-of-type(3) img {
     height: 7em;
     width: auto;
 }
 
-section:nth-child(7) p {
+main > section:nth-of-type(3) p {
     width: 12.3em;
     font-weight: 900;
     margin-left: 1em;
@@ -588,7 +721,7 @@ section:nth-child(7) p {
 
 /* HOE WERKT HET */
 
-section:nth-child(8) {
+section:nth-of-type(4) {
 
     display: flex;
     flex-direction: row;
@@ -596,19 +729,19 @@ section:nth-child(8) {
     justify-content: center;
 }
 
-section:nth-child(8) h2 {
+section:nth-of-type(4) h2 {
     text-align: center;
     font-weight: 900;
     font-size: 1.4;
     width: 100%;
 }
 
-section:nth-child(8) img {
+section:nth-of-type(4) img {
     height: 6em;
     width: auto;
 }
 
-section:nth-child(8) p {
+main > section:nth-of-type(4) p {
     width: 11em;
     font-weight: 900;
     margin-left: 1em;
@@ -624,25 +757,53 @@ section:nth-child(8) p {
 
 /* SECTION FAQ */
 
-section:nth-child(9) h2 {
+section:nth-of-type(5) h2 {
     text-align: center;
     font-weight: 900;
     font-size: 1.4;
 }
 
-section:nth-child(9) section img {
+section:nth-of-type(5) > section img {
    width: 1em;
    height: auto;
+   
+   transition: .5s;
 }
 
-section:nth-child(9) section p {
+section:nth-of-type(5) > section.open img {
+    rotate: 180deg;
+}
+
+section:nth-of-type(5) > section p:first-child {
     font-weight: 900;
     font-size: 1em;
     text-align: left;
     padding: 1em 2em 1em 1em ;
+
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
 }
 
-section:nth-child(9) section {
+section:nth-of-type(5) > section p:last-child {
+    display:none;
+    font-weight: 500;
+    font-size: .9em;
+    text-align: left;
+    padding: 1em 0em 1em 1em ;
+    margin: 0;
+}
+
+section:nth-of-type(5) > section.open p:last-child {
+    display: block;
+}
+
+
+
+
+
+section:nth-of-type(5) > section {
     background-color: var(--color-background-sections);
     border-radius: 1em;
     margin: 1em;
@@ -651,18 +812,18 @@ section:nth-child(9) section {
 
 
 /* SECTION VEEL TEKST */
-section:nth-child(10) {
+section:nth-of-type(6) {
     margin-top: 4em;
     margin-bottom: 5em;
 }
 
-section:nth-child(10) p{
+main > section:nth-of-type(6) p{
     margin: 1em;
     text-align: center;
     font-size: .9em;
 }
 
-section:nth-child(10) a {
+section:nth-of-type(6) a {
     color: var(--color-button);
     text-decoration: underline;
 }
@@ -670,39 +831,129 @@ section:nth-child(10) a {
 
 /* SECTION BETAALWIJZE */
 
-section:nth-child(11) {
+main > section:nth-of-type(7) {
     background-color: var(--color-background-sections);
     margin-bottom: 2em;
 }
 
-section:nth-child(11) img {
+main > section:nth-of-type(7) img {
     margin-top: 7em;
     width: 12em;
     margin-left: 2.5em;
 }
 
-section:nth-child(11) p:first-of-type img {
+main > section:nth-of-type(7) p:first-of-type img {
     height: .8em;
     width: auto;
     margin: 0 0 0 -.4em;
     padding: 0;
 }
 
-section:nth-child(11) p:first-of-type {
+main > section:nth-of-type(7) p:first-of-type {
     font-weight: 700;
     font-size: .9em;
     margin-top: 1em;
     margin-bottom: .5em;
 }
 
-section:nth-child(11) p {
+main > section:nth-of-type(7) p {
     margin: 0 0 0 3.1em;
     font-size: .8em;
     line-height: 1.5em;
 }
 
-section:nth-child(11) p:last-of-type {
+main > section:nth-of-type(7) p:last-of-type {
     padding-bottom: 7em;
 }
 
+@media (min-width:60em) {
 
+    main header img:first-of-type {
+        display: none;
+    }
+    
+    main header img:nth-child(2) {
+        display: block;
+        filter: brightness(60%);
+        width: 100%;
+        height: auto;
+    }
+
+    main header ul {
+		position: absolute;
+		bottom:1em;
+		width: 28em;
+		height: auto;
+		background-color: var(--color-background-sections);
+		border-radius: .5em;
+		padding:1em;
+		
+	
+		margin-left: 30em;
+	
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	
+		box-shadow: .1em .1em .1em grey;
+	}
+
+    /* JAARKAARTEN */
+
+    main > section:nth-of-type(2) {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 2em;
+        margin: auto;
+    }
+
+    section:nth-of-type(2) section {
+        width: 18em;
+        height: auto;
+    }
+
+
+
+    /* WAAROM KOPEN */
+
+
+    main section:nth-of-type(3) > h2 {
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    main section:nth-of-type(3) {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* FAQ */
+
+    main > section:nth-of-type(5) {
+        width: 55em;
+        margin: auto;
+    }
+
+    section:nth-of-type(5) > section p:first-child {
+        width: 53em;
+        background-color: var(--color-background-sections);
+        border-radius: .5em;
+    }
+
+
+    /* BETAALWIJZE */
+
+
+
+
+    /* VEEL TEKST */
+
+    main > section:nth-of-type(6) {
+        width: 50em;
+        padding-top: 5em;
+        padding-bottom: 3em;
+        margin: auto;
+    }
+}
