@@ -70,6 +70,13 @@ body {
 	position: relative;
 }
 
+button {
+	color: var(--color-text);
+}
+
+
+/* DE FEEDBACK BUTTON */
+
 body > button:first-of-type {
 	position: fixed;
 	right: -3.5em;
@@ -125,6 +132,8 @@ body > header {
 	background-color: var(--color-background-sections);
 }
 
+/* MENU */
+
 header > button:nth-of-type(1) {
 	order:-1;
 }
@@ -138,15 +147,6 @@ body > header img {
 	width: 2em;
 	padding-bottom: .3em;
 	margin: 0;
-}
-header h1 {
-	margin: 0;
-}
-
-header h1 img {
-	width: 4em;
-	padding: 0;
-	padding-top: .3em;
 }
 
 header button{
@@ -236,6 +236,22 @@ body header nav img:nth-child(2) {
 
 
 
+/* LOGO */
+
+header h1 {
+	margin: 0;
+}
+
+header h1 img {
+	width: 4em;
+	padding: 0;
+	padding-top: .3em;
+}
+
+
+
+
+
 
 /* ALLE BUTTONS */
 
@@ -258,6 +274,8 @@ main section > button:hover {
 
 
 
+
+
 /* FOOTER */
 
 footer {
@@ -269,7 +287,7 @@ footer {
 	margin-bottom: 2em;
 }
 
-
+/* ELK UITKLAP DING FOOTER */
 
 footer section {
 	position: relative;
@@ -281,6 +299,8 @@ footer section {
 	flex-wrap: wrap;
 	
 }
+
+/* FOOTER UITKLAP */
 
 footer h3 {
 	margin:0;
@@ -298,7 +318,7 @@ footer section button {
 
 	transition-duration: 1s;
 	position: absolute;
-	right:0;
+	right:0; /* oplossing om de button rechts te krijgen, tijdens feedback gefixt*/
 
 	width:3rem;
 	aspect-ratio: 1/1;
@@ -337,6 +357,9 @@ footer > section.open ul {
 
 
 
+
+/* FOOTER TEKST */
+
 footer p:first-of-type {
 	display: flex;
 	flex-direction: column;
@@ -358,18 +381,6 @@ footer p:nth-of-type(2) {
 	margin-top: 3em;
 	margin-left: 5em;
 	margin-right: 5em;
-}
-
-footer button:last-of-type {
-	border-color: var(--color-background);
-	border-radius: 2em;
-	background-color: var(--color-background-sections);
-	margin-top: 1em;
-
-
-	display: grid;
-	place-items: center;
-	margin: auto;
 }
 
 footer button:last-of-type img {
@@ -404,6 +415,23 @@ footer > section:nth-of-type(4) {
 
 
 
+/* BELLEN BUTTON */
+
+footer button:last-of-type {
+	border-color: var(--color-background);
+	border-radius: 2em;
+	background-color: var(--color-background-sections);
+	margin-top: 1em;
+
+
+	display: grid;
+	place-items: center;
+	margin: auto;
+}
+
+
+
+
 
 
 
@@ -418,7 +446,13 @@ ul {
 
 
 
+/* GROOT SCHERM */
+
+
 @media (min-width:60em) {
+
+
+	/* HEADER */
 
 	header button:first-of-type {
 		display: none;
@@ -473,7 +507,7 @@ ul {
 		display: none;
 	}
 
-
+	/* FOOTER */
 
 
 	footer {

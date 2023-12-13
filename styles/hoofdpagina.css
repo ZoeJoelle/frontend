@@ -74,10 +74,26 @@ main section {
 
 
 /* HEADER IN DE MAIN */
+main > header {
+	margin: 0em;
+	padding: 0em;
+	position: relative;
+
+	background-color: var(--color-background);
+	display: flex;
+	flex-direction: column;
+}
 
 main header section {
 	position: relative;
 }
+
+main header > section {
+	padding: 0em;
+	margin: 0em;
+}
+
+/* TEKST OVER HET PLAATJE */
 
 main header p {
 	position: absolute;
@@ -100,25 +116,13 @@ main header img:first-of-type {
 	/* filter: contrast(80%); */
 }
 
+/* PLAATJE VOOR GROOT SCHERM */
+
 main header img:nth-child(2) {
 	display: none;
 }
 
-
-main > header {
-	margin: 0em;
-	padding: 0em;
-	position: relative;
-
-	background-color: var(--color-background);
-	display: flex;
-	flex-direction: column;
-}
-
-main header > section {
-	padding: 0em;
-	margin: 0em;
-}
+/* SNELLE NAV  */
 
 main header ul {
 	position: absolute;
@@ -137,7 +141,6 @@ main header ul {
 
 	box-shadow: 0 0 .5em .1em var(--color-shadow);
 }
-
 
 main header li button {
 	width: 10em;
@@ -198,7 +201,7 @@ main section:nth-child(2) > button:hover {
 main section:nth-child(3) > button {
 	display: grid;
 	/* place-items: center; */
-	margin: auto;
+	margin: auto; /* tijdens feedback bedacht */
 }
 
 
@@ -263,6 +266,8 @@ main section:nth-child(5) p {
 }
 
 
+
+
 /* SECTIOON HOTELS */
 
 main section:nth-child(6) {
@@ -272,7 +277,7 @@ main section:nth-child(6) {
 }
 
 main section:nth-child(6) ul::-webkit-scrollbar {
-	display: none;
+	display: none; /* tijdens feedback gefixt*/
 }
 
 main section:nth-child(6) ul {
@@ -280,11 +285,8 @@ main section:nth-child(6) ul {
 	flex-direction: row;
 	text-align: left;
 	overflow-x: scroll;
-	/* overflow-y: hidden; */
 	overscroll-behavior: contain auto;
-	/* -webkit-overflow-scrolling: touch; */
 	scrollbar-width: none;
-	/* scrollbar-height: none; */
 
 	margin: 0em;
 	padding: .2em;
@@ -296,7 +298,7 @@ main section:nth-child(6) > ul li {
 	height: 32em;
 	margin-left:.5em;
 	margin-right:.5em;
-	box-shadow: .1em .1em .1em grey;
+	box-shadow: 0 0 .5em .1em var(--color-shadow);
 	border-radius: .5em;
 	background-color: var(--color-background-sections);
 }
@@ -671,7 +673,7 @@ main section:nth-child(7) section:nth-of-type(2) p:last-of-type img {
 		flex-direction: row;
 		justify-content: space-between;
 	
-		box-shadow: .1em .1em .1em grey;
+		box-shadow: 0 0 .5em .1em var(--color-shadow);
 	}
 
 	/* main header ul li {
