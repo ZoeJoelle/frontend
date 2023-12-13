@@ -10,7 +10,7 @@ uitklap1Button.onclick = uitklappen1;
 
 function uitklappen1() {
 	uitklap1.classList.toggle("open");
-}
+} //code van/samen met sanne
 
 var uitklap2Button = document.querySelector("footer section:nth-of-type(2) button");
 var uitklap2 = document.querySelector("footer section:nth-of-type(2)");
@@ -56,7 +56,7 @@ sluitButton.onclick = sluitMenu;
 
 function sluitMenu() {
   deNav.classList.remove("open");
-}
+} // code overgenomen uit een codepen en naar mijn eigen site toevertaald
 
 
 
@@ -69,7 +69,7 @@ uitklapButtonBrons.onclick = uitklappenBrons;
 
 function uitklappenBrons() {
 	uitklapBrons.classList.toggle("open");
-}
+} // code overgenomen van de uitklap in de footer en doorvertaald naar hier
 
 
 var uitklapButtonZilver = document.querySelector("section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3)");
@@ -101,33 +101,33 @@ uitklapButton1.onclick = uitklappen1;
 
 function uitklappen1() {
 	uitklap1.classList.toggle("open");
-}
+} // code overgenomen van de uitklap in de footer en doorvertaald naar hier
 
 
 
 
 //kalender veranderen
 
-var knop1 = document.querySelector("main section:nth-child(7) section:nth-of-type(1) button:first-of-type");
-var actie1 = document.querySelector("main section:nth-child(7) section:nth-of-type(1)");
+// var knop1 = document.querySelector("main section:nth-child(7) section:nth-of-type(1) button:first-of-type");
+// var actie1 = document.querySelector("main section:nth-child(7) section:nth-of-type(1)");
 
-var knop2 = document.querySelector("main section:nth-child(7) section:nth-of-type(1) button:last-of-type");
+// var knop2 = document.querySelector("main section:nth-child(7) section:nth-of-type(1) button:last-of-type");
 
-var plaatje1 = document.querySelector("main section:nth-child(7) section:nth-of-type(2) img:first-of-type")
-var plaatje2 = document.querySelector("main section:nth-child(7) section:nth-of-type(2) img:nth-of-type(2)")
+// var plaatje1 = document.querySelector("main section:nth-child(7) section:nth-of-type(2) img:first-of-type")
+// var plaatje2 = document.querySelector("main section:nth-child(7) section:nth-of-type(2) img:nth-of-type(2)")
 
-// Voeg event listeners toe aan de knoppen
-knop1.addEventListener("click", toonPlaatje1);
-knop2.addEventListener("click", toonPlaatje2);
+// // Voeg event listeners toe aan de knoppen
+// knop1.addEventListener("click", toonPlaatje1);
+// knop2.addEventListener("click", toonPlaatje2);
 
-// Functie om plaatje 1 te tonen
-function toonPlaatje1() {
-    plaatje1.classList.add("zichtbaar");
-    plaatje2.classList.remove("zichtbaar");
-}
+// // Functie om plaatje 1 te tonen
+// function toonPlaatje1() {
+//     plaatje1.classList.add("zichtbaar");
+//     plaatje2.classList.remove("zichtbaar");
+// }
 
-// Functie om plaatje 2 te tonen
-function toonPlaatje2() {
-    plaatje1.classList.remove("zichtbaar");
-    plaatje2.classList.add("zichtbaar");
-}
+// // Functie om plaatje 2 te tonen
+// function toonPlaatje2() {
+//     plaatje1.classList.remove("zichtbaar");
+//     plaatje2.classList.add("zichtbaar");
+// }

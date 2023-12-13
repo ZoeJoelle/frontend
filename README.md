@@ -135,12 +135,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  heb het filmpje in html gekregen, ik had het goede element, alleen de verkeerde manier van de video aanspreken.
+  verder staan alle buttons na veel moeite nu in het midden en is de verticale lijst nu schuibaar, helaas heeft deze nog wel een scrollbar. die kregen we niet weg.
 
 </details>
 
@@ -154,7 +150,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  uit de screenreader kwam dat sommige dingen nog niet goed opgepakt worden of dat sommige dingen gelezen worden terwijl dit niet hoort. dit heb ik geprobeerd op te lossen met airalabels en sommige alts weg te halen
+
+  uit de wcag lijst komt het volgende:
+  - voor blinde zijn de buttons en links nu duidelijk waar ze voor zijn door een arialabel toe te voegen.
+  - de code van disney zelf waren allemaal divs, dus in dat opzicht heb ik de hele html verbeterd, ik heb h1,h2,h3 toegepast, ul,li buttons en a elemementen, alles behalve de divs. 
+  - het filmpje op de site staat nu op pauze en je kan hem zelf aanzetten
 
 </details>
 
@@ -168,26 +169,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week loop ik voor mijn gevoel eindelijk een beetje bij, ik heb een html css en java. Ik loop nog tegen een paar dingetjes aan, maar verder gaat het nu eindelijk wel lekker. Ik moet wel nog beginnen aan de tweede pagina, dat ga ik van het weekend doen. Ik weet nog niet goed hoe het werkt om 3 css bestanden te hebben voor 2 pagina's, maar hier kom ik vast wel uit.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  student 1: - sections voor een deel een andere kleur geven en die mee laten groeien
+  student 2: - section in section in section mag niet dus wat dan wel
+  - schuifbalk weghalen
+  student 3: geen vragen
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  de oplossing voor de 3 sections is geworden dan ik het plaatje gewoon in een p kan zetten, dit lost ook gelijk andere problemen op in mijn site. Verder hebben we opgezocht hoe ik de schuifbalk weg kan krijgen en dit ging met een vrij simpele code, maar je moet het wel weten.
 
 </details>
 
@@ -205,15 +199,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  wat erg goed ging is het niet opgeven als iets niet lukt. Ik nam er gewoon even afstand van en ging wat anders doen. als ik er later dan weer naar ging kijken lukte het vaak wel. en ik ben natuurlijk gewoon erg trots op het eindrestultaat het is gewoon twee druppels water, maar dan wel met een goede code ipv div's. Ook het responsive maken van de site ben ik trots op, ik had voor dit vak namelijk geen idee hoe dat werkte en ik vind dat ik het best goed heb gedaan zo.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/trots1.png" width="375px" alt="top">
+  <img src="readme-images/trots2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  het maken van de micro interactie vond ik heel moeilijk, heb van alles geprobeerd en gezocht, maar het wilde niet lukken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/microinteractiejava.png" width="375px" alt="java van micro interactie">
 </details>
 
 
@@ -229,8 +224,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://codepen.io/Zoe-deRuiter/pen/gOqzPKG 
+  2. https://codepen.io/shooft/pen/LYqrpWr
+  3. https://codepen.io/shooft/pen/mdvobaY 
+  4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
 
 </details>

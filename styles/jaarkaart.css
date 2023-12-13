@@ -64,12 +64,34 @@
     --color-hover-main-button: rgb(222, 222, 222);
 }
 
+
+
+
+
+
 /* HEADER IN DE MAIN */
 
 
 main header section {
 	position: relative;
 }
+
+main > header {
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	background-color: var(--color-background);
+	display: flex;
+	flex-direction: column;
+}
+
+main header > section {
+	padding: 0em;
+	margin: 0em;
+}
+
+/* TEKST OVER PLAATJE */
 
 main header p {
 	position: absolute;
@@ -88,29 +110,15 @@ main header p {
 main header img:first-of-type {
 	border-radius: 0 0 5em 5em;
 	filter: brightness(60%);
-	/* filter: saturate(80%); */
-	/* filter: contrast(80%); */
 }
+
+/* PLAATJE VOOR GROOT SCHERM */
 
 main header img:nth-child(2) {
     display: none;
 }
 
-
-main > header {
-	margin: 0;
-	padding: 0;
-	position: relative;
-
-	background-color: var(--color-background);
-	display: flex;
-	flex-direction: column;
-}
-
-main header > section {
-	padding: 0em;
-	margin: 0em;
-}
+/* SNELLE NAV  */
 
 main header ul {
 	position: absolute;
@@ -135,6 +143,8 @@ main header li button {
 	width: 12em;
 	font-weight: 700;
 	font-size: .7em;
+
+    cursor:pointer;
 }
 
 
@@ -150,6 +160,10 @@ main header > img {
 	padding: 0em;
 	margin: 0em;
 }
+
+
+
+
 
 
 
@@ -171,6 +185,10 @@ section:nth-of-type(1) p {
 
 
 
+
+
+
+
 /* JAARKAART SECTION BRONS */
 
 section:nth-of-type(2) section:first-of-type {
@@ -184,6 +202,8 @@ section:nth-of-type(2) section:first-of-type {
     flex-direction: column;
     align-items: center;
 }
+
+/* PLAATJE PLUS ACHTERGROND */
 
 section:nth-of-type(2) section:first-of-type img {
     height: 2.5em;
@@ -206,8 +226,7 @@ section:nth-of-type(2) section:first-of-type div {
     border-radius: .8em;
 }
 
-
-
+/* TEKST */
 
 section:nth-of-type(2) section:first-of-type h3 {
     font-weight: 900;
@@ -224,9 +243,7 @@ section:nth-of-type(2) section:first-of-type p {
     padding: 0;
 }
 
-
-
-
+/* EERSTE BUTTON */
 
 section:nth-of-type(2) section:first-of-type button:first-of-type {
     width: 95%;
@@ -236,15 +253,15 @@ section:nth-of-type(2) section:first-of-type button:first-of-type {
     margin: 1em 0 0 0;
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:first-of-type button:first-of-type:hover {
     background-color: var(--color-button-hoover);
 }
 
-
-
-
+/* TWEEDE BUTTON */
 
 section:nth-of-type(2) section:first-of-type button:nth-of-type(2) {
     font-weight: 700;
@@ -255,16 +272,15 @@ section:nth-of-type(2) section:first-of-type button:nth-of-type(2) {
     margin: .6em 0 .5em 0;
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:first-of-type button:nth-of-type(2):hover {
     background-color: var(--color-background);
 }
 
-
-
-
-
+/* DERDER BUTTON */
 
 section:nth-of-type(2) section:first-of-type button:nth-of-type(3) img {
     width: 2em;
@@ -272,6 +288,8 @@ section:nth-of-type(2) section:first-of-type button:nth-of-type(3) img {
     background-color: var(--color-background-sections);
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:first-of-type button:nth-of-type(3) img:hover {
@@ -297,6 +315,8 @@ section:nth-of-type(2) section:first-of-type button:nth-of-type(3):hover {
     background-color: var(--color-background);
 }
 
+/* UITKLAP TEKST */
+
 section:nth-of-type(2) section:first-of-type li {
     display: flex;
 	flex-direction: row;
@@ -316,16 +336,12 @@ section:nth-of-type(2) section:first-of-type li img {
     width: auto;
 }
 
-
-
 section:nth-of-type(2) section:first-of-type ul {
 	display:none;
 	width:100%;
 	margin:0;
 	padding:0 ;
-	list-style:none;
-	
-    
+	list-style:none;  
 }
 
 section:nth-of-type(2) section:first-of-type.open ul {
@@ -355,6 +371,8 @@ section:nth-of-type(2) section:nth-of-type(2) {
     align-items: center;
 }
 
+/* PLAATJE PLUS ACHTERGROND */
+
 section:nth-of-type(2) section:nth-of-type(2) img {
     height: 2.5em;
     width: 2.5em;
@@ -376,9 +394,7 @@ section:nth-of-type(2) section:nth-of-type(2) div {
     border-radius: .8em;
 }
 
-
-
-
+/* TEKST */
 
 section:nth-of-type(2) section:nth-of-type(2) h3 {
     font-weight: 900;
@@ -395,9 +411,7 @@ section:nth-of-type(2) section:nth-of-type(2) p {
     padding: 0;
 }
 
-
-
-
+/* EERSTE BUTTON */
 
 section:nth-of-type(2) section:nth-of-type(2) button:first-of-type {
     width: 95%;
@@ -407,15 +421,15 @@ section:nth-of-type(2) section:nth-of-type(2) button:first-of-type {
     margin: 1em 0 0 0;
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:nth-of-type(2) button:first-of-type:hover {
     background-color: var(--color-button-hoover);
 }
 
-
-
-
+/* TWEEDE BUTTON */
 
 section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(2) {
     font-weight: 700;
@@ -426,21 +440,22 @@ section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(2) {
     margin: .6em 0 .5em 0;
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(2):hover {
     background-color: var(--color-background);
 }
 
-
-
-
-
+/* DERDE BUTTON */
 
 section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3) img {
     width: 2em;
     height: auto;
     background-color: var(--color-background-sections);
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3) img:hover {
@@ -465,6 +480,8 @@ section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3) {
 section:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(3):hover {
     background-color: var(--color-background);
 }
+
+/* UITKLAP TEKST */
 
 section:nth-of-type(2) section:nth-of-type(2) li {
     display: flex;
@@ -503,6 +520,8 @@ section:nth-of-type(2) section:nth-of-type(2).open ul {
 
 
 
+
+
 /* JAARKAART SECTION GOUD */
 
 section:nth-of-type(2) section:nth-of-type(3) {
@@ -515,6 +534,8 @@ section:nth-of-type(2) section:nth-of-type(3) {
     flex-direction: column;
     align-items: center;
 }
+
+/* PLAATJE PLUS ACHTERGROND */
 
 section:nth-of-type(2) section:nth-of-type(3) img {
     height: 2.5em;
@@ -537,9 +558,7 @@ section:nth-of-type(2) section:nth-of-type(3) div {
     border-radius: .8em;
 }
 
-
-
-
+/* TEKST */
 
 section:nth-of-type(2) section:nth-of-type(3) h3 {
     font-weight: 900;
@@ -557,9 +576,7 @@ section:nth-of-type(2) section:nth-of-type(3) p {
     text-align: center;
 }
 
-
-
-
+/* EERSTE BUTTON */
 
 section:nth-of-type(2) section:nth-of-type(3) button:first-of-type {
     width: 95%;
@@ -569,15 +586,15 @@ section:nth-of-type(2) section:nth-of-type(3) button:first-of-type {
     margin: 1em 0 0 0;
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:nth-of-type(3) button:first-of-type:hover {
     background-color: var(--color-button-hoover);
 }
 
-
-
-
+/* TWEEDE BUTTON*/
 
 section:nth-of-type(2) section:nth-of-type(3) button:nth-of-type(2) {
     font-weight: 700;
@@ -588,21 +605,22 @@ section:nth-of-type(2) section:nth-of-type(3) button:nth-of-type(2) {
     margin: .6em 0 .5em 0;
 
     transition: 1s;
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:nth-of-type(3) button:nth-of-type(2):hover {
     background-color: var(--color-background);
 }
 
-
-
-
-
+/* DERDE BUTTON */
 
 section:nth-of-type(2) section:nth-of-type(3) button:last-of-type img {
     width: 2em;
     height: auto;
     background-color: var(--color-background-sections);
+
+    cursor:pointer;
 }
 
 section:nth-of-type(2) section:nth-of-type(3) button:last-of-type img:hover {
@@ -623,6 +641,8 @@ section:nth-of-type(2) section:nth-of-type(3) button:last-of-type {
 section:nth-of-type(2) section:nth-of-type(3) button:last-of-type:hover {
     background-color: var(--color-background);
 }
+
+/* UITKLAP TEKST */
 
 section:nth-of-type(2) section:nth-of-type(3) li {
     display: flex;
@@ -660,6 +680,9 @@ section:nth-of-type(2) section:last-of-type.open ul {
 
 
 
+
+
+
 /* MAIN BUTTON */
 
 main > button {
@@ -676,11 +699,16 @@ main > button {
     display: grid;
 	place-items: center;
 	margin: auto;
+
+    cursor:pointer;
 }
 
 main > button:hover {
     background-color: var(--color-hover-main-button);
 }
+
+
+
 
 
 
@@ -694,10 +722,14 @@ section:nth-of-type(3) {
     justify-content: center;
 }
 
+/* H2 */
+
 section:nth-of-type(3) h2 {
     font-weight: 900;
     font-size: 1.4;
 }
+
+/* PLAATJES EN TEKST */
 
 section:nth-of-type(3) img {
     height: 7em;
@@ -719,6 +751,8 @@ main > section:nth-of-type(3) p {
 
 
 
+
+
 /* HOE WERKT HET */
 
 section:nth-of-type(4) {
@@ -729,12 +763,16 @@ section:nth-of-type(4) {
     justify-content: center;
 }
 
+/* H2 */
+
 section:nth-of-type(4) h2 {
     text-align: center;
     font-weight: 900;
     font-size: 1.4;
     width: 100%;
 }
+
+/* PLAATJES EN TEKST */
 
 section:nth-of-type(4) img {
     height: 6em;
@@ -755,7 +793,14 @@ main > section:nth-of-type(4) p {
 
 
 
+
+
 /* SECTION FAQ */
+section:nth-of-type(5) > section {
+    background-color: var(--color-background-sections);
+    border-radius: 1em;
+    margin: 1em;
+}
 
 section:nth-of-type(5) h2 {
     text-align: center;
@@ -763,16 +808,22 @@ section:nth-of-type(5) h2 {
     font-size: 1.4;
 }
 
+/* PIJLTJE */
+
 section:nth-of-type(5) > section img {
    width: 1em;
    height: auto;
    
    transition: .5s;
+
+   cursor:pointer;
 }
 
 section:nth-of-type(5) > section.open img {
     rotate: 180deg;
 }
+
+/* ZICHTBARE TEKST */
 
 section:nth-of-type(5) > section p:first-child {
     font-weight: 900;
@@ -785,6 +836,8 @@ section:nth-of-type(5) > section p:first-child {
 	align-items: center;
     justify-content: space-between;
 }
+
+/* UITKLAP TEKST */
 
 section:nth-of-type(5) > section p:last-child {
     display:none;
@@ -803,11 +856,7 @@ section:nth-of-type(5) > section.open p:last-child {
 
 
 
-section:nth-of-type(5) > section {
-    background-color: var(--color-background-sections);
-    border-radius: 1em;
-    margin: 1em;
-}
+
 
 
 
@@ -829,6 +878,11 @@ section:nth-of-type(6) a {
 }
 
 
+
+
+
+
+
 /* SECTION BETAALWIJZE */
 
 main > section:nth-of-type(7) {
@@ -841,6 +895,8 @@ main > section:nth-of-type(7) img {
     width: 12em;
     margin-left: 2.5em;
 }
+
+/* TEKST */
 
 main > section:nth-of-type(7) p:first-of-type img {
     height: .8em;
@@ -866,7 +922,17 @@ main > section:nth-of-type(7) p:last-of-type {
     padding-bottom: 7em;
 }
 
+
+
+
+
+
+/* CODE VOOR GROOT SCHERM */
+
 @media (min-width:60em) {
+
+
+    /* MAIN HEADER */
 
     main header img:first-of-type {
         display: none;
@@ -941,12 +1007,6 @@ main > section:nth-of-type(7) p:last-of-type {
         background-color: var(--color-background-sections);
         border-radius: .5em;
     }
-
-
-    /* BETAALWIJZE */
-
-
-
 
     /* VEEL TEKST */
 

@@ -93,6 +93,8 @@ body > button:first-of-type {
 	border-radius: 1.5em 1.5em 0 0;
 
 	box-shadow: 0 0 .5em .1em var(--color-shadow);
+
+	cursor:pointer;
 }
 
 
@@ -136,6 +138,7 @@ body > header {
 
 header > button:nth-of-type(1) {
 	order:-1;
+	cursor:pointer;
 }
 
 header > button img {
@@ -159,10 +162,12 @@ header button{
 	padding: .5em;
 	font-size: .7em;
 	font-weight: 500;
+	cursor:pointer;
 }
 
 header nav > button {
 	justify-self: start;
+	cursor:pointer;
 }
 
 header > nav {
